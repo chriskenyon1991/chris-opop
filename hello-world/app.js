@@ -5,7 +5,7 @@ exports.lambdaHandler = async (event, context) => {
     response = {
       statusCode: 200,
       body: JSON.stringify({
-        message: "test post works",
+        message: "pipeline works",
       }),
     };
   } catch (err) {
