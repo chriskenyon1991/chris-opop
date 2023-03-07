@@ -32,7 +32,7 @@ phases:
     # run-as: Linux-user-name
     # on-failure: ABORT | CONTINUE
     runtime-versions:
-      nodejs: 14
+      nodejs: 14.x
     #   runtime: version
     # commands:
     #   - command
