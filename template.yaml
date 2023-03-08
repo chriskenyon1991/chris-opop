@@ -12,6 +12,11 @@ Globals:
     MemorySize: 128
 
 Resources:
+  opopSNS:
+    Type: AWS::SNS::Topic
+    Properties:
+      ContentBasedDeduplication: false
+
   HelloWorldFunction:
     Type: AWS::Serverless::Function
     Properties:
