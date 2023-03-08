@@ -1,4 +1,5 @@
 let response;
+var AWS = require("aws-sdk");
 
 exports.lambdaHandler = async (event, context) => {
   try {
