@@ -14,7 +14,8 @@ exports.lambdaHandler = async (event, context) => {
     var params = {
       Message: eventText,
       Subject: "Test SNS From Lambda",
-      TopicArn: "arn:aws:sns:us-west-2:123456789012:test-topic1",
+      TopicArn:
+        "arn:aws:sns:eu-west-2:925221024030:opop-pipeline-Gamma-opopSNS-GX3dgGmSrBVw",
     };
     sns.publish(params, context.done);
   } catch (err) {
