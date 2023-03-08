@@ -1,0 +1,22 @@
+{
+  "name": "chris-sam-1",
+  "version": "1.0.0",
+  "description": "This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chriskenyon1991/chris-opop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chriskenyon1991/chris-opop/issues"
+  },
+  "homepage": "https://github.com/chriskenyon1991/chris-opop#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1330.0"
+  }
+}
