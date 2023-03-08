@@ -1,6 +1,6 @@
 let response;
 
-exports.lambdaHandler = async (event, context) => {
+exports.lambdaHandler = async (event, context, callback) => {
   try {
     // console.log('Received event:', JSON.stringify(event, null, 4));
 
