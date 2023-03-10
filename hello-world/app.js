@@ -1,12 +1,24 @@
 let response;
+const AWS = require("aws-sdk");
 
 exports.lambdaHandler = async (event, context, callback) => {
   try {
-    // console.log('Received event:', JSON.stringify(event, null, 4));
+    console.log("start lambda");
+    const sns = new AWS.SNS();
+    var params = {
+      Message: "the messsssssage",
+      Subject: "Test SNS From Lambda",
+      TopicArn:
+        "arn:aws:sns:eu-west-2:925221024030:opop-pipeline-Prod-opopSNS-NCkubpVkvfKu",
+    };
+    sns.publish(params);
 
-    var message = event.Records[0].Sns.Message;
-    console.log("Message received from SNS:", message);
-    callback(null, "Success");
+    response = {
+      statusCode: 200,
+      body: JSON.stringify({
+        message: sns,
+      }),
+    };
   } catch (err) {
     console.log(err);
     return err;
